@@ -8,5 +8,6 @@ Dev Dependencies: npm install -D nodemon concurrently
 Missing file in ./config: default.json
 
 {
-  "mongoURI":"mongodb+srv://dave777:<password>@contactkeeper.nhlec.mongodb.net/<dbname>?retryWrites=true&w=majority"
+  "mongoURI":"mongodb+srv://dave777:<password>@contactkeeper.nhlec.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
