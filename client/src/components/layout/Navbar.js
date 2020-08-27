@@ -42,9 +42,16 @@ const Navbar = ({ title, icon }) => {
   return (
     <div className='navbar bg-primary'>
       <h1>
-        <i className={icon} /> {title}
+        <Link to='/'>
+          <i className={icon} /> {title}
+        </Link>
       </h1>
-      <ul>{isAuthenticated ? authLinks : guestLinks}</ul>
+      <ul>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+        {isAuthenticated ? authLinks : guestLinks}
+      </ul>
     </div>
   );
 };
